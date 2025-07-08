@@ -17,7 +17,7 @@ order by 1,2
 
 select location,date,total_cases,total_deaths,(total_deaths/total_cases * 100) as Death_Percentage 
 from CovidDeaths$
-where location like '%India%'
+where location like '%states%'
 order by 1,2
 
 --Looking at Total_cases vs Population
@@ -25,7 +25,7 @@ order by 1,2
 
 select location,date,total_cases,population,(total_cases/population * 100) as Death_Percentage 
 from CovidDeaths$
-where location like '%India%'
+where location like '%states%'
 order by 1,2
 
 --Looking at countries with highes infection rate
